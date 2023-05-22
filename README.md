@@ -24,26 +24,26 @@ sll.push_front(20);
 sll.push_front(30);
 sll.push_front(40);
 sll.push_front(50);
-cout << sll;
+cout << sll; // 50 40 30 20 10
 ```
 
 
 **Case Use #2:**
 ```cpp
 utec::single_linked_list<double> sll = {10.5, 20.3, 30.2, 40.1, 50.4};
-cout << sll;
+cout << sll; // 50.4 40.1 30.2 20.3 10.5
 ```
 
 **Case use #3:**
 ```cpp
 utec::single_linked_list<int> sll = {10, 20, 30, 40, 50};
 for (auto it = begin(sll); it != end(sll); 
-	cout << *it;
+	cout << *it; // 50 40 30 20 10 
 ```
 **Case use #4:**
 ```cpp
 utec::single_linked_list<int> sll = {10, 20, 30, 40, 50};
-auto total = accumulate(begin(sll), end(sll), 0);
+auto total = accumulate(begin(sll), end(sll), 0); // 150
 ```
 
 **Case use #5:**
@@ -52,7 +52,7 @@ utec::single_linked_list<int> sll1 = {10, 20, 30, 40, 50};
 auto sll2 = sll1;
 for (auto& item: sll1)
     item *=10;
-cout << sll1 << endl;
-cout << sll2 << endl;
+cout << sll1 << endl; // 500 400 300 200 100 
+cout << sll2 << endl; // 50 40 30 20 10
 ```
 
