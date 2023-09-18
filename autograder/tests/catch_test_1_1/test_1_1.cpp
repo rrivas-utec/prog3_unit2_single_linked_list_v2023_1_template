@@ -3,10 +3,17 @@
 //
 #include "catch.hpp"
 #include "redirect_io.h"
-#include "PC1.h"
+#include "single_linked_list.h"
 using namespace std;
 
 static void test_1_1() {
+    utec::single_linked_list<int> sll;
+    sll.push_front(10);
+    sll.push_front(20);
+    sll.push_front(30);
+    sll.push_front(40);
+    sll.push_front(50);
+    cout << sll;
 }
 
 TEST_CASE("Question #1.1") {
